@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Idea Funding DApp</title>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <style>
+     th {
+         background-color: coral;
+         color: whitesmoke;
+     }
+     #
+     
+  </style>
+</head>
+<body class="row">
+ <h1 class="text-center banner"><b> #metoo</b></h1>
+ <h2 class="text-center banner">Support Campaign on Blockchain</h2>
+ <div class="container">
+ <div class="row margin-top-3">
+  <div class="col-sm-12">
+  <h3>#metoo needs your active support</h3>
+      <p>There have been instances where a woman subjected to sexual harrassment and part of <strong>#metoo</strong> campaign has been slapped with legal notices. People behind these legal notices are powerful and can have their way out if the vitims are not supported actively by us who believe in their cause. You can send your support donatiion on this smart contract based solution, hosted on Ethereum Blockchain. <br/>The money collected throug this campaign will be used for activities as mentioned in the table.</p>
+      <h3>Process to send donate money</h3>
+      <p>Get <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">Metamask</a> extension for chrome browser. Watch this video to create <a href="https://www.youtube.com/watch?v=24EjCaK9qR8">your ethereum metamask wallet.</a>Now load it with some ether.<br/>Go to Get button below to chnage your ether into <strong>#metoo</strong> tokens.<br/>Send your <strong>#metoo</strong> tokens to activity that you wish to support to.</p>
+  </div>
+ </div>
+ <div class="row margin-top-3">
+  <div class="col-sm-7">
+  <h2>#metoo support activities</h2>
+  <div class="table-responsive">
+   <table class="table table-bordered">
+   <thead>
+    <tr>
+    <th>Title</th>
+    <th>Total No. of Tokens Rececived</th>
+    </tr>
+   </thead>
+   <tbody id="candidate-rows">
+   </tbody>
+   </table>
+  </div>
+  </div>
+  <div class="col-sm-offset-1 col-sm-4">
+  <h2>Tokens</h2>
+  <div class="table-responsive">
+   <table class="table table-bordered">
+   <tr>
+    <th>Tokens Info</th>
+    <th>Value</th>
+   </tr>
+   <tr>
+    <td>Support Tokens for Campaign</td>
+    <td id="tokens-total"></td>
+   </tr>
+   <tr>
+    <td>Tokens Acquired by supporters</td>
+    <td id="tokens-sold"></td>
+   </tr>
+   <tr>
+    <td>Ether exchnage value Per #metoo Token</td>
+    <td id="token-cost"></td>
+   </tr>
+   <tr>
+    <td>Ether receivevd at the contract</td>
+    <td id="contract-balance"></td>
+   </tr>
+   </table>
+  </div>
+  </div>
+ </div>
+ <hr>
+ <div class="row margin-bottom-3">
+  <div class="col-sm-7 form">
+  <h2>Send Tokens</h2>
+  <div id="msg"></div>
+  <input type="text" id="candidate" class="form-control" placeholder="Enter the title of the activity"/>
+  <br>
+  <br>
+  <input type="text" id="vote-tokens" class="form-control" placeholder="Total no. of tokens to send"/>
+  <br>
+  <br>
+  <a href="#" onclick="App.voteForCandidate(); return false;" class="btn btn-primary">Send</a>
+  </div>
+  <div class="col-sm-offset-1 col-sm-4">
+  <div class="col-sm-12 form">
+   <h2>Get Tokens</h2>
+   <div id="buy-msg"></div>
+   <input type="text" id="buy" class="col-sm-8" placeholder="Number of tokens to buy"/>
+   <a href="#" onclick="App.buyTokens(); return false;" class="btn btn-primary">Get</a>
+  </div>
+
+  </div>
+ </div>
+ </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
